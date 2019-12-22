@@ -1,0 +1,46 @@
+<html>
+<head>
+<title> My Smart Parking</title>   
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="login-box">
+      <div class="left-box">
+        <h1> Sign In</h1>
+          
+          <input type="text" id="id2" name="car ID" placeholder="car ID"/>
+          <input type="password"  id="pass" name="password" placeholder="Password"/>
+          <input type="submit"  onclick="login()" name="signup-button" value="Sign Up"/>
+        
+	</div>
+        <div class="right-box">
+          <span class="signinwith">Sign in with<br/>Social Network     
+	</span>
+        
+        <button class="social facebook">Log in with Facebook</button>    
+        <button class="social twitter">Log in with Twitter</button> 
+        <button class="social google">Log in with Google+</button> 
+            
+        
+        </div>
+        <div class="or">OR</div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCDp541t-c9_czjsK7MGhX_FbOONttBdiQ",
+        authDomain: "my-smart-parking-6ee4a.firebaseapp.com",
+        databaseURL: "https://my-smart-parking-6ee4a.firebaseio.com",
+        storageBucket: "my-smart-parking-6ee4a.appspot.com",
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="work.js"> </script>
+    
+</body>    
+</html>
+
+
+        
